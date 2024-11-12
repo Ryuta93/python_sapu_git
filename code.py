@@ -1,1 +1,3 @@
-print('Hello World')
+x = 'バナナ'
+x = 2021
+print(x)
