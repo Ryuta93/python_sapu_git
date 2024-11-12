@@ -1,3 +1,4 @@
-x = 'apple'
-resul = x in ['apple', 'banana']
-print(resul)
+
+price = 1000
+text = f"この商品は{price}円です"
+print(text)
