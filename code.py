@@ -1,3 +1,3 @@
 x = 'apple'
-result = x in ['apple', 'banana']
-print(result)
+resul = x in ['apple', 'banana']
+print(resul)
