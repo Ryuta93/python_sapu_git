@@ -1,5 +1,3 @@
-x = {'リンゴ': 120, 'バナナ':300, 'いちご':450}
-y = {'トマト':280, '梨':150}
-z = x | y
-z_len = len(z)
-print(z_len)
+x = 'apple'
+result = x in ['apple', 'banana']
+print(result)
