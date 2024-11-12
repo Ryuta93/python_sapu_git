@@ -1,5 +1,7 @@
-scores = {"math":82, "japanese":74, "english":60, "science":92, "society":70}
+# 問題1-1
 
-scores["math"] = 80
+scores = {"数学":82, "国語":74, "英語":60, "理科":92, "社会":70}
 
-print(scores)
+diff = scores["理科"] - scores["社会"]
+
+print(diff)
