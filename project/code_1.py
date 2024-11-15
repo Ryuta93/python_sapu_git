@@ -1,6 +1,6 @@
-from my_packages.my_module import Student
+import matplotlib.pyplot as plt
 
-
-student_1 = Student("斉藤そうま",82, 74, 60, 92, 72)
-s1_avg = student_1.average_score()
-print(s1_avg)
+label = ["a", "b", "c", "d"]
+num = [20, 17, 25, 9]
+plt.bar(label, num)
+plt.savefig('./bar.png')
