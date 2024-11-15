@@ -1,20 +1,16 @@
-class Student:
-    def __init__(self, name, math, japanese, english, science, society):
+#問題3-1
+class Item:
+    def __init__(self, id, name, price, purchase_price):
+        self.id = id
         self.name = name
-        self.math = math
-        self.japanese = japanese
-        self.english = english
-        self.science = science
-        self.society = society
+        self.price = price
+        self.purchase_price = purchase_price
         
-    def average_score(self):
-        avg = (self.math + self.japanese + self.english + self.science + self.society) / 5
-        return avg
-    
-student_1 = Student("斉藤そうま", 82, 74, 60, 92, 72)
-s1_avg = student_1.average_score()
-print(s1_avg)
+    def cost_rate(self):
+        rate = self.purchase_price / self.price
+        return rate
 
-student_2 = Student("田中かなで", 75, 78, 80, 85, 68)
-s2_avg = student_2.average_score()
-print(s2_avg)
+item_1 = Item('A0001', '半袖クールTシャツ', 5000, 2250)
+item_1.price
+rate = item_1.cost_rate()
+print(rate)
