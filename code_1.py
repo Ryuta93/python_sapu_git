@@ -11,6 +11,10 @@ class Student:
         avg = (self.math + self.japanese + self.english + self.science + self.society) / 5
         return avg
     
-student_1 = Student("斉藤そうま",82, 74, 60, 92, 72)
+student_1 = Student("斉藤そうま", 82, 74, 60, 92, 72)
 s1_avg = student_1.average_score()
 print(s1_avg)
+
+student_2 = Student("田中かなで", 75, 78, 80, 85, 68)
+s2_avg = student_2.average_score()
+print(s2_avg)
