@@ -1,22 +1,12 @@
-# 問題1-1
-"""
-scores = {"数学":82, "国語":74, "英語":60, "理科":92, "社会":70}
+names = ['斎藤', '佐藤', '鈴木']
 
-diff = scores["理科"] - scores["社会"]
+for x in names:
+    print(f'{x}さん')
+    
+scores = {'Math': 82, 'Japanese': 74, 'English': 60, 'Science': 92, 'Society': 70}
 
-print(f"{diff}点")
-"""
-# 問題1-2
-"""
-scores = [82, 74, 60, 92, 70]
-avg_score = sum(scores) / len(scores)
-print(avg_score)    
-"""
-scores = {"数学":82, "国語":74, "英語":60, "理科":92, "社会":70}
-"""
-scores_values = list(scores.values())
-avg_score = sum(scores_values) / len(scores_values)
-print(f'{avg_score}点')
-"""
-avg_score = sum(scores.values()) / len(scores.values())
-print(f'{avg_score}点')
+for k, v in scores.items():
+    print(f'{k}の点数は{v}点です')
+    
+for i in range(1, 11):
+    print(i)
