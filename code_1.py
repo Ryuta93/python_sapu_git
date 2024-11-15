@@ -1,11 +1,16 @@
-def is_leap_years(year):
-    if year % 400 == 0:
-        return True
-    elif year % 100 == 0:
-        return False
-    elif year % 4 == 0:
-        return True
-    else:
-        return False
+class Student:
+    def __init__(self, name, math, japanese, english, science, society):
+        self.name = name
+        self.math = math
+        self.japanese = japanese
+        self.english = english
+        self.science = science
+        self.society = society
+        
+    def average_score(self):
+        avg = (self.math + self.japanese + self.english + self.science + self.society) / 5
+        return avg
     
-print(is_leap_years(2024))
+student_1 = Student("斉藤そうま",82, 74, 60, 92, 72)
+s1_avg = student_1.average_score()
+print(s1_avg)
